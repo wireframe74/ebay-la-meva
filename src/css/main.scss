@@ -1,0 +1,525 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+// Cusomtise
+
+.header {
+margin: 0 0 0;
+background-color: #FFFFFF;
+clear: both;
+padding: 0;
+position: relative;
+background-repeat: repeat-x;
+background-image: none;
+
+height: 190px;
+}
+
+#logo {
+margin: 25px 0 20px 0;
+width: 269px;
+float: left;
+border: 1px solid;
+}
+
+
+
+.container {
+    width: 980px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.main-nav {
+  height: 55px;
+  background: #632f6f;
+  width: 100%;
+}
+
+#search {
+float: right;
+/* height: 26px; */
+width: 305px;
+margin: 58px 0 0px 0px;
+padding: 0px;
+}
+ #search #search_text {float: left; /*line-height: 26px;*/ margin: 6px 0px 0px 0px; font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif;  color: #252525; font-size: 12px; font-weight: bold;}
+ #search #search_cont {float: right; margin: 0px 0px 0px 0px; overflow: hidden; width: 230px; height: 30px; /*background:#f7f7f7;*/ border:1px solid #ddd;  overflow: hidden; padding-right:10px;}
+ #search #search_cont #search_input_text1 {float: left; width: 200px; height: 24px; text-align: left; margin-top: 0px; margin-left: 0px; }
+ #search #search_cont #search_input_text1 .input_text {background: transparent; border: none; color: #696969; font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif;  font-size: 11px; padding: 8px 0px 8px 7px; overflow: visible;}
+ #search #search_cont #top_search_button {float: right; width: 22px; height: 22px; overflow: hidden; margin-top: 0px; margin-left: 0px;  margin: 1px 1px 0px 0px;}
+ #search #search_cont #top_search_button:hover {opacity: .8; -moz-opacity: 0.8; filter: alpha(opacity=80); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80);}
+
+
+ .main-nav {
+
+    ul {
+        margin: 15px 0 0 0;
+        padding: 0;
+        width: 100%;
+        border: 1px solid;
+        overflow: hidden;
+
+
+        li {
+
+            list-style: none;
+            float: left;
+            display: inline;
+
+
+            a {
+
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 16px;
+                margin: 0 0 0 25px ;
+                text-decoration: none;
+
+
+            }
+
+            .first {
+                margin-left: 0;
+            }
+        }
+
+    }
+ }
+
+ #nav #qm0 a{
+font-family: 'Arvo', Arial, Helvetica, sans-serif!important;
+font-weight: normal;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+
+
+
+
+
+#listing_content {background: repeat-y 0px 0px; width: 1020px; margin: 0px auto; margin-top: 30px;}
+#listing_content #listing_left {float: left; width: 485px; overflow: hidden;}
+#listing_content #listing_right {float: right; width: 535px; text-align: left; }
+#listing_content #listing_right #listing_right_content { padding: 0px 0px 0px 14px; margin-top: 15px;}
+
+#auction_title_right { padding: 20px 14px 20px 14px; margin-left:10px; }
+#auction_title_left {color: #101010; font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif; font-size: 16px; text-decoration: none; line-height: 110%; padding: 9px 14px 0px 14px;}
+
+#ratings {margin: 2px 0px 0px 14px;}
+#ratings #stars {float: left;}
+#ratings #stars ul {margin: 0px; padding: 0px; list-style: none;}
+#ratings #stars ul li {margin: 0px 1px 0px 0px; padding: 0px; float: left;}
+#ratings #stars img {width: 14px; height: 14px;}
+
+#ratings #link {float: left; font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif; text-decoration: none; line-height: 14px;}
+#ratings #link a {color: #595959; font-size: 12px; text-decoration: none; padding: 0px 7px 0px 0px; margin-left: 8px; margin-top: 1px;}
+#ratings #link a:hover {color: #595959; font-size: 12px; text-decoration: underline;}
+
+
+#buy_it_now_section { float:right; }
+#buy_it_now_section #button {font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif; line-height: 28px; height: 29px; text-align: center; float:left; }
+#buy_it_now_section #button a { display: inline-block;  background: #c16cc4; text-transform:uppercase; color: #ffffff; font-size: 12px; text-decoration: none; padding:5px 10px;}
+#buy_it_now_section #button a:hover {background: #393939; color: #ffffff;  text-decoration: none;}
+
+#buy_it_now_section #watch_tell { margin-left:10px;     padding: 0; font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif; line-height: 28px; height: 29px;  float:right; }
+#buy_it_now_section #watch_tell a {display: inline-block;  background: #393939; text-transform:uppercase; color: #ffffff; font-size: 12px; text-decoration: none; padding:5px 10px;}
+#buy_it_now_section #watch_tell a:hover {background: #c16cc4; color: #ffffff;  text-decoration: none;}
+
+.block-action-price{  height:auto;  margin-top:30px; margin-left:14px;}
+#current_price_section { font-size:30px; font-family:"Century Gothic",Tahoma,Arial,Helvetica,sans-serif; font-weight:bold; float: left; width: 120px; height: 50px; background: transparent; margin: 0 auto; 
+ text-align: center; line-height:49px;}
+#current_price_section #price {font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif; height: 26px; line-height: 32px; text-shadow: #b82b59 0.05em 0.07em 0.0em; font-size: 26px; font-weight: normal; text-transform: uppercase; color: #ffffff;}
+
+
+
+
+
+#tabs_section {width: 100%; float:left; margin-top: 0px;}
+#tabs section #buttons {}
+
+.mc-tabpanel2{ /*background:#f7f7f7;*/}
+#tabs_section #content_box {/*border: 1px solid #ddd;*/ border-top: none; /*background: #f7f7f7;*/ margin-bottom: 14px;}
+
+#mc-tabs2 {padding: 0px 0px 0px 0px; overflow: hidden; border-bottom:1px solid #ddd; height: 35px; background:#f7f7f7;}
+#mc-tabs2 ul {margin: 0px; padding: 0px 0px 0px 0px; list-style-type: none;}
+#mc-tabs2 ul li {margin: 0px; padding: 0px 0px 0px 0px; float: left; line-height:34px; position: relative; height: 35px;}
+#mc-tabs2 ul li.mc-lastitem2 {margin: 0px 0px 0px 0px; padding: 0px;}
+#mc-tabs2 ul li.mc-lastitem2 a {}
+
+#mc-tabs2 ul li a {color: #fff; font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif; font-size: 12px; text-transform:uppercase; text-decoration: none; height: 35px; display: inline-block; 
+ margin: 0px 0px 0px 0px; font-weight: normal; padding: 0px 25px 0px 25px; text-align: center; border-right:2px solid #fff; background:#252525; cursor:text;}
+ #mc-tabs2 ul li:last-child a{border-right:none;}
+#mc-tabs2 ul li a:hover {color: #ffffff; text-decoration: none;  background: #393939; }
+#mc-tabs2 ul li a.inactive {cursor:pointer; color: #111111; text-decoration: none; font-size: 12px; background: #f7f7f7; /*border: 1px solid #e4e4e4;*/ border-bottom: none; 
+height: 35px; line-height: 34px; padding:0px 4px; margin-top: 0px;  padding: 0px 34px 0px 34px; }
+#mc-tabpanels2 {}
+#mc-tabpanels2 div.mc-tabpanel2 {padding: 0px 0px 0px 0px;}
+div.mc-box2 {padding: 0px 0px 0px 0px; }
+#mc-tabs2 .last {}
+
+
+div.terms {
+   height:445px;
+   background:#ffffff;
+   padding:7px;
+   overflow:auto;
+}
+div.terms p,
+div.terms li {font:normal 12px/15px "Century Gothic",Tahoma,Arial,Helvetica,sans-serif;color:#333; line-height:160%;}
+div.terms h3 {font:bold 14px/19px "Century Gothic",Tahoma,Arial,Helvetica,sans-serif;color:#000;}
+div.terms h4 {font:bold 12px/17px "Century Gothic",Tahoma,Arial,Helvetica,sans-serif;color:#000;}
+div.terms strong {color:#000;}
+
+.product-detail{
+       height:445px;
+  /* background:#f7f7f7;*/
+   padding:7px;
+   overflow:auto;
+}
+
+
+div.product-detail p,
+div.product-detail li {font:normal 12px/15px "Century Gothic",Tahoma,Arial,Helvetica,sans-serif;color:#333; line-height:160%;}
+div.product-detail h3 {font:bold 14px/19px "Century Gothic",Tahoma,Arial,Helvetica,sans-serif;color:#000;}
+div.product-detail h4 {font:bold 12px/17px "Century Gothic",Tahoma,Arial,Helvetica,sans-serif;color:#000;}
+div.product-detail strong {color:#000;}
+
+
+
+
+
+
+
+#mc-tabs3 {padding: 0px 0px 0px 0px; width: 493px; text-align: left; margin-top: 10px;}
+#mc-tabs3 ul {margin: 0px; padding: 0px 0px 0px 0px; list-style-type: none;}
+#mc-tabs3 ul#foo2 li {margin: 0px 11px 0px 3px; padding: 0px 0px 0px 0px; float: left; width: 76px; height: 76px; overflow: hidden; cursor:pointer;}
+
+#mc-tabs3 ul#foo2 li.mc-lastitem3 {margin: 0px 12px 0px 0px; padding: 0px;}
+#mc-tabs3 ul#foo2 li a {padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; display: inline-block;}
+#mc-tabs3 ul li.first a {padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; display: inline-block;}
+#mc-tabs3 ul li a img {width: 74px; height: 74px; border: 1px solid #cfcfcf;}
+
+/*#mc-tabs3 ul li a:hover img {}
+
+#mc-tabs3 ul li a.mc-selected3 img {border: 1px solid #404040;}
+*/
+#mc-tabpanels3 {}
+#mc-tabpanels3 div.mc-tabpanel3 {padding: 0px 0px 0px 0px;}
+div.mc-box3 {padding: 0px 0px 0px 0px; }
+#mc-tabs3 .last {background-image: none;}
+
+
+#mc-boxheading {height: 24px; margin-top: 0px; margin-bottom: 5px;}
+
+
+#product_pic {width: 483px; margin-bottom: 5px; border: 1px solid #d0d0d0; height:485px; overflow:hidden;}
+#product_pic img {width: 483px; display: block; height:auto; max-height:480px;  width:auto; margin:0 auto;}
+
+
+
+#image_text {text-align: center; color: #101010; font-family: "Century Gothic",Tahoma,Arial,Helvetica,sans-serif; font-size: 11px; text-decoration: none; margin: 5px 0px 0px 0px;}
+
+
+
+
+
+
+
+.col {
+border: 1px solid;
+}
+
+.col-left {
+width: 48%;
+float: left;
+
+}
+
+.col-right {
+width: 48%;
+float: right;
+}
